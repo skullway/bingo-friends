@@ -21,5 +21,5 @@ Just commit and push to main (or make a pull request from your local branch).
 When anything gets added to main, it is built and deployed within minute on the website.
 
 * If you want to open it on your own website, just don't forget to use `npm run build` for the bundling
-* and `npm run dev` to test it locally before you deploy it. Then get a hosting service such as vercel
-* and connect it to your repo.
+and `npm run dev` to test it locally before you deploy it. Then get a hosting service such as vercel
+and connect it to your repo.
