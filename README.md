@@ -1,12 +1,25 @@
-# React + Vite
+# BINGO FRIENDS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+You've heard about bingo, so now prepare for BINGO FRIENDS!!!
 
-Currently, two official plugins are available:
+### How to use:
+1. You need to keep this away from the friend whose the bingo subject.
+2. You need to make a list of phrases he uses commonly.
+3. You are not allowed to try luring your friend to say these phrases.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Local Editing
 
-## Expanding the ESLint configuration
+1. Use the package manager [npm](https://www.npmjs.com/) to install the node modules.
+```bash
+npm install
+```
+2. After making the list on the `How to use guide`, just add this list on ./src/data/tileOptions.js.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Deploying to Production
+
+Just commit and push to main (or make a pull request from your local branch).
+When anything gets added to main, it is built and deployed within minute on the website.
+
+* If you want to open it on your own website, just don't forget to use `npm run build` for the bundling
+* and `npm run dev` to test it locally before you deploy it. Then get a hosting service such as vercel
+* and connect it to your repo.
