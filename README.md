@@ -13,7 +13,9 @@ You've heard about bingo, so now prepare for BINGO FRIENDS!!!
 ```bash
 npm install
 ```
-2. After making the list on the `How to use guide`, just add this list on ./src/data/tileOptions.js.
+2. After making the list on the `How to use guide`, just add this list on ./public/tileOptions.yaml.
+Please make sure that you add the words/phrases regarding the correct spacing and annotations of
+a proper yaml file.
 
 ### Deploying to Production
 
