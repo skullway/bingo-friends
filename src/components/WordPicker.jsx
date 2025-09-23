@@ -1,9 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import tileOptions from '../data/tileOptions';
+import { fetchTileOptions } from '../data/tileOptionsFetcher.js';
 
 const WordPicker = ({ onWordsSelected }) => {
   const [selectedWords, setSelectedWords] = useState([]);
   const [isMaxSelected, setIsMaxSelected] = useState(false);
+  const [tileOptions, setTileOptions] = useState([]);
+
+  useEffect(() => {
+    const loadTileOptions = async () => {
+      const options = await fetchTileOptions();
+      if (options) {
+        setTileOptions(options);
+      }
+    }
+
+    loadTileOptions();
+  }, []);
 
   useEffect(() => {
     setIsMaxSelected(selectedWords.length >= 8);
