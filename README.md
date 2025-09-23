@@ -17,6 +17,12 @@ npm install
 Please make sure that you add the words/phrases regarding the correct spacing and annotations of
 a proper yaml file.
 
+3. To test locally, you will need to create a .env file in the root directory, make an environment variable
+by the name of VITE_DEV and set it to true.
+```
+VITE_DEV=true
+```
+
 ### Deploying to Production
 
 Just commit and push to main (or make a pull request from your local branch).
